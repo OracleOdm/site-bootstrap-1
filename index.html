@@ -12,13 +12,24 @@
 			background-color: rgb(0, 0, 0);
 			color: rgb(134, 131, 125);
 		}
+
+		/* Texte bleu au survol */
+		.btn-light:hover {
+			background-color: #0d6efd;
+			color: white !important;
+		}
+
+		/* Texte bleu quand sélectionné (checked) */
+		.btn-check:checked+.btn {
+			background-color: #0d6efd;
+			color: white !important;
+		}
 	</style>
 </head>
 
 <body class="container">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Navbar</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation">
@@ -40,38 +51,38 @@
 					</li>
 				</ul>
 				<form class="d-flex">
-					<input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Rechercher</button>
+					<input class="form-control" type="search" placeholder="Rechercher" aria-label="Search">
+					<button class="btn text-light" style="background-color: #0a970b;" type="submit">Rechercher</button>
 				</form>
 			</div>
 		</div>
 	</nav>
 	<header>
 		<div class="container my-4">
-			<div class="bg-secondary py-4 px-3 rounded text-dark">
+			<div class="py-4 px-3 rounded text-dark" style="background-color: #e7dfdf;">
 				<h1>History Game</h1>
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea laborum architecto in
 					deleniti est molestias culpa nobis rem optio, doloribus, sint et ab.</p>
 				<hr>
 				<p>Lorem ipsum dolor sit amet consectetur.</p>
-				<button class="btn btn-success" type="button">En savoir plus</button>
+				<button class="btn text-light" style="background-color: #0a970b;" type="button">En savoir plus</button>
 			</div>
 		</div>
-		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 	</header>
 	<div class="container">
+		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 		<div class="row">
 			<div class="col-4">
-				<div class="bg-success text-light">
+				<div class=" text-light py-2 px-2" style="background-color: #0a970b;">
 					<h5>Lorem ipsum 1</h5>
 					<small>Il y a 3 jours</small>
-					<p class="bg-success text-light">Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue
+					<p class="text-light">Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue
 						ligula
 						ac quam
 						viverra nec consectetur ante hendrerit.</p>
 					<small>Donec id elit non mi porta.</small>
 				</div>
-				<div class="text-dark bg-light">
+				<div class="text-dark bg-light py-2 px-2">
 					<h5>Lorem ipsum 2</h5>
 					<small>Il y a 4 jours</small>
 
@@ -79,7 +90,7 @@
 						viverra nec consectetur ante hendrerit.</p>
 					<small>Donec id elit non mi porta.</small>
 				</div>
-				<div class="bg-light text-dark">
+				<div class="bg-light text-dark py-2 px-2">
 					<div class="d-flex w-100 justify-content-between bg-light my-1">
 						<h5 class="mb-1">Lorem ipsum 3</h5>
 						<small class="text-muted">Il y a 5 jours</small>
@@ -113,14 +124,15 @@
 					pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat
 					sagittis.
 				</p>
-				<a class="btn btn-success" href="#"><i class="fa fa-image"></i>&nbsp;&nbsp;Ajouter une photo</a>
+				<a class="btn" style="background-color: #0a970b;" href="#"><i
+						class="fa fa-image"></i>&nbsp;&nbsp;Ajouter une photo</a>
 			</div>
 		</div>
 	</div>
 	<hr />
-	<h3>Et au commencement il y eut ...</h3>
 	<div class="container">
-		<section class="col-auto d-flex justify-content-evenly">
+		<h3>Et au commencement il y eut ...</h3>
+		<section class="col-auto d-flex justify-content-evenly flex-wrap">
 			<img src="img/Space_Invaders.png" class="img-thumbnail" alt="Space Invaders" width="150" />
 			<img src="img/Pac_Man.jpg" class="img-thumbnail" alt="Pac Man" width="150" />
 			<img src="img/Donkey_Kong.jpg" class="img-thumbnail" alt="Donkey Kong" width="150" />
@@ -130,16 +142,17 @@
 		</section>
 	</div>
 	<hr />
-	<h3>Donec ut libero sed arcu vehicula ultricies a non tortor :</h3>
+	<h3 class="container">Donec ut libero sed arcu vehicula ultricies a non tortor :</h3>
 	<div class="container text-light">
 		<div class="row">
 			<div class="col-lg-4">
-				<div class="bg-success">Lorem ipsum dolor sit amet</div>
-				<div class="bg-light text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam
+				<div class="py-2 px-2" style="background-color: #0a970b;">Lorem ipsum dolor sit amet</div>
+				<div class="bg-light text-dark py-2 px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+					a diam
 					lectus.
 					Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante
 					hendrerit. Donec et mollis dolor. </div>
-				<div class="bg-success">Footer</div>
+				<div class="py-2 px-2" style="background-color: #0a970b;">Footer</div>
 			</div>
 		</div>
 		<br>
@@ -147,17 +160,19 @@
 		</div>
 	</div>
 	<hr />
-	<div class="text-light">
+	<div class="container">
 		<h3>Quelques jeux célèbres et leur chronologie ... </h3>
+	</div>
+	<div class="container text-light">
 		<table class="container text-light">
-			<thead>
+			<thead class="container text-center">
 				<tr>
-					<th class="bg-success col-4">Nom du jeu</th>
-					<th class="bg-success">Description</th>
+					<th class="col-4" style="background-color: #0a970b;">Nom du jeu</th>
+					<th style="background-color: #0a970b;">Description</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr style="background-color: #adb5bd;">
 					<td>Space Invaders</td>
 					<td>C'est un jeu vidéo développé par la société japonaise Taito, sorti en 1978 sur borne
 						d'arcade. Il s'agit d'un shoot them up fixe. Tomohiro Nishikado conçoit et programme le jeu.
@@ -165,9 +180,9 @@
 						que Breakout ou La Guerre des mondes. Considéré comme le premier archétype du shoot them up,
 						il est aussi l'un des titres les plus influents et célèbres de l'histoire du jeu vidéo.</td>
 				</tr>
-				<tr>
-					<td class="bg-secondary d-flex justify-content-flex-start">Pac Man</td>
-					<td class="bg-secondary">C'est un jeu vidéo créé par Tōru Iwatani pour l’entreprise japonaise
+				<tr class="bg-secondary">
+					<td class="d-flex justify-content-flex-start py-2 px-2">Pac Man</td>
+					<td class="">C'est un jeu vidéo créé par Tōru Iwatani pour l’entreprise japonaise
 						Namco, sorti au Japon
 						le 22 mai 1980. Le jeu consiste à déplacer Pac-Man, un personnage qui, vu de profil,
 						ressemble à un diagramme circulaire à l’intérieur d’un labyrinthe, afin de lui faire manger
@@ -178,7 +193,7 @@
 						nouveau genre. Pac-Man est souvent crédité en tant que point de repère dans l'histoire du
 						jeu vidéo, et est parmi les plus célèbres jeux d'arcade de tous les temps.</td>
 				</tr>
-				<tr>
+				<tr style="background-color: #adb5bd;">
 					<td>Donkey Kong</td>
 					<td>C'est un jeu vidéo d'arcade créé par Nintendo en 1981. C'est un des premiers jeux de
 						plates-formes. Si le scénario est simple, il est suffisamment développé pour l'époque :
@@ -186,9 +201,9 @@
 						gorille géant, Donkey Kong. Les deux personnages qu'il introduit sont appelés à devenir deux
 						icônes de la marque Nintendo.</td>
 				</tr>
-				<tr>
-					<td class="bg-secondary">Space Harrier</td>
-					<td class="bg-secondary">Space Harrier est une série de jeux vidéo de shoot 'em up développée
+				<tr class="bg-secondary">
+					<td class="d-flex justify-content-flex-start py-2 px-2">Space Harrier</td>
+					<td>Space Harrier est une série de jeux vidéo de shoot 'em up développée
 						par Sega-AM2, puis
 						Amusement Vision, et éditée par Sega, apparue en arcade en 1985, sur consoles Sega et sur
 						ordinateurs. Alors que la caméra réalise un scrolling vers l'avant, le joueur contrôle un
@@ -198,7 +213,7 @@
 						volant, des mammouths à un œil, des têtes de statues de l'Île de Pâques volantes, ou des
 						extraterrestres.</td>
 				</tr>
-				<tr>
+				<tr style="background-color: #adb5bd;">
 					<td>Sonic</td>
 					<td>Le premier jeu vidéo Sonic, Sonic the Hedgehog, est sorti le 23 juin
 						1991 dans le but de
@@ -206,9 +221,9 @@
 						Mario. Depuis, Sonic est devenu l'un des personnages de jeu vidéo les plus connus au monde,
 						avec des jeux qui se sont vendus à plus de 70 millions d'exemplaires</td>
 				</tr>
-				<tr>
-					<td class="bg-secondary">Mario Kart</td>
-					<td class="bg-secondary">Mario Kart est une série de jeux vidéo de course et de combat motorisé
+				<tr class="bg-secondary">
+					<td class="d-flex justify-content-flex-start py-2 px-2">Mario Kart</td>
+					<td>Mario Kart est une série de jeux vidéo de course et de combat motorisé
 						produite par
 						Nintendo, adaptée de la série de jeux de plates-formes Super Mario. Débutée en 1992 par
 						Super Mario Kart sur Super Nintendo, la série existe encore plus de vingt-cinq ans après
@@ -225,19 +240,19 @@
 		<div class="container py-3">
 			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 				<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-				<label class="btn btn-outline-primary" for="btnradio1">Précédent</label>
+				<label class="btn btn-light text-primary" for="btnradio1">Précédent</label>
 
 				<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-				<label class="btn btn-outline-primary" for="btnradio2">1</label>
+				<label class="btn btn-light text-primary" for="btnradio2">1</label>
 
 				<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-				<label class="btn btn-outline-primary" for="btnradio3">2</label>
+				<label class="btn btn-light text-primary" for="btnradio3">2</label>
 
 				<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-				<label class="btn btn-outline-primary" for="btnradio3">3</label>
+				<label class="btn btn-light text-primary" for="btnradio3">3</label>
 
 				<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-				<label class="btn btn-outline-primary" for="btnradio3">suivant</label>
+				<label class="btn btn-light text-primary" for="btnradio3">suivant</label>
 			</div>
 		</div>
 		<address class="mx-4">
